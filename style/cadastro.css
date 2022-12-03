@@ -30,6 +30,8 @@
     width: 90%;
 }
 
+
+
 .cadastro__email::placeholder{
     font-family: var(--fonte-principal);
     background: url("../img/Email.svg");
@@ -59,3 +61,13 @@
         width: 30%;
     }
 } 
+
+@media screen and (min-width: 1728px){
+    
+    .cadastro{
+        padding: 3em 20vw;
+    }
+
+    
+
+}

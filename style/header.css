@@ -61,21 +61,44 @@
 
 }
 
-.container__botao{
+.container__botao:checked ~ .container__label > .cabecalho__menu{
+    background-image: url(../img/logo_footer/Menu\ Aberto.svg);
+}
+
+.container__botao:checked ~ .container__label{
+    background: var(--azul-degrade);
+}
+
+.container__botao,
+.container__titulo,
+.opcoes,
+.container__texo
+{
     display: none;
 }
 
-.container__titulo{
-    display: none;
+.opcoes__botao:checked ~ .lista-menu{
+    display: block;
+    width: auto;
 }
 
-.opcoes{
-    display: none;
+.opcoes__botao:checked ~ .opcoes__label > .opcoes__item{
+    background: var(--azul-degrade);
+    color: var(--branco);
 }
 
+.opcoes__item{
+    padding: 2em 1em;
+}
 
-.container__texo{
-    display: none;
+.lista-menu__item:hover{
+    background: var(--azul-degrade);
+}
+
+.lista-menu__item:hover > .lista-menu__link{
+    -webkit-text-fill-color: var(--branco); 
+    text-decoration: none;
+    
 }
 
  
@@ -110,26 +133,19 @@
         color: var(--preto);
     }
 
-    .container__imagem-favoritos{
+    .container__imagem-favoritos,
+    .cabecalho__menu, 
+    .opcoes__botao{
         display: none;
     }
 
-    .cabecalho__menu{
-        display: none;
-    }
+   
 
     .logo__alura-book{
         margin-left: 1em;
     }
 
-    .opcoes__botao:checked ~ .lista-menu{
-        display: block;
-        width: auto;
-    }
 
-    .opcoes__botao{
-        display: none;
-    }
 
 }
 
@@ -147,6 +163,10 @@
 
     .opcoes{
         margin-right: auto;
+    }
+
+    .container__texo{
+        display: block;
     }
     
  

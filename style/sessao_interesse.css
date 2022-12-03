@@ -60,6 +60,14 @@
     
 }
 
+.botao__saibamais:hover{
+    background-color: #f7a604;
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+    
+}
+
 @media screen and (min-width: 1024px) {
 
     .card{
@@ -67,4 +75,41 @@
         margin: 2em auto;
     }
     
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container{
+        display: flex;
+        align-items: center;
+        margin: 0 20vw 3em 20vw;
+    }
+
+    .swiper-pagination{
+        margin: 1em 0;
+    }
+
+    .descricao__titulo, 
+    .carrossel__titulo-vendidos{
+        font-size: 32px;
+        line-height: 48px;
+       
+    }
+
+    .descricao__texto{
+        font-size: 16px;
+    }
+
+    .descricao__titulo-livro{
+        font-size: 18px;
+    }
+
+    .descricao{
+        margin-right: 1em;
+    }
+
+
+    .card{
+        width: 60%;
+        margin: 5em auto 5em 2em;
+    }
 }
